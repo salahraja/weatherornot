@@ -12,11 +12,9 @@
         class="absolute bg-weather-secondary text-white w-full shadow-md py-2 px-1 top-[66px]"
         v-if="mapboxSearchResults"
       >
-        <p class="py-2" v-if="searchError">
-          Sorry, something went wrong, please try again.
-        </p>
+        <p class="py-2" v-if="searchError">Sorry, please try again.</p>
         <p class="py-2" v-if="!searchError && mapboxSearchResults.length === 0">
-          No results match your query, try a different term.
+          No query match, try a different term.
         </p>
         <template v-else>
           <li
