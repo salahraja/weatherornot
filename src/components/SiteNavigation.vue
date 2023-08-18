@@ -5,11 +5,16 @@
     >
       <RouterLink :to="{ name: 'home' }">
         <div class="flex items-center gap-3">
-          <i class="fa-solid fa-sun text-2xl"></i>
+          <img
+            class="btnImg"
+            src="/public/weather.svg"
+            alt="weather svg"
+            style="width: 40px; height: 40px"
+          />
+          <i class="fa-solid text-2xl"></i>
           <p class="text-2xl">The Local Weather</p>
         </div>
       </RouterLink>
-
       <div class="flex gap-3 flex-1 justify-end">
         <i
           class="fa-solid fa-circle-info text-xl hover:text-weather-secondary duration-150 cursor-pointer"
